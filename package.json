@@ -1,0 +1,35 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Front-end demo todo application for Runnable.io",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RunnableDemoForYash/web.git"
+  },
+  "keywords": [
+    "react",
+    "babel",
+    "express",
+    "nodejs",
+    "ES6",
+    "Runnable",
+    "docker"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "prestart": "gulp"
+  },
+  "author": "Runnable, Inc.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RunnableDemoForYash/web/issues"
+  },
+  "homepage": "https://github.com/RunnableDemoForYash/web#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-string-replace": "^0.4.0"
+  }
+}
