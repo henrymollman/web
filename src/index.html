@@ -35,7 +35,10 @@
             })
             this.setState({ todos: todos })
           })
-          .catch((err) => console.log(err))
+          .catch((err) => {
+            console.log(err)
+            this.setState({ error: `Could not connect to API: ${this.props.source}` })
+          })
       }
 
       addTodo (newTodoValue, callback) {
@@ -111,6 +114,7 @@
               {renderedTodos}
               <AddTodoField saveCallback={this.addTodo} />
             </ul>
+            <p className="error">{this.state.error}</p>
           </div>
         )
       }

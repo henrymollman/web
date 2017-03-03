@@ -94,3 +94,8 @@ body {
 
 .small {
   font-size: 13px; }
+
+.error {
+  font-size: 13px;
+  padding: 15px;
+  color: red; }
