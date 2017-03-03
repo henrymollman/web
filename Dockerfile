@@ -4,6 +4,7 @@ MAINTAINER Runnable, Inc.
 # Cache NPM Install
 RUN mkdir -p /app
 ADD package.json /app
+WORKDIR /app
 RUN npm install
 
 # Add Repository & Build
