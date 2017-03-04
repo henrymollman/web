@@ -11,5 +11,5 @@ RUN npm install
 ADD . /app/
 
 # Expose Ports & Run Application
-EXPOSE 3000
+EXPOSE 80
 CMD npm start

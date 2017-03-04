@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 const host = process.env.RUNNABLE_CONTAINER_URL || 'localhost'
-const port = process.env.PORT || 3000
+const port = 80
 
 function logErrors (err, req, res, next) {
   console.error(err.stack)
