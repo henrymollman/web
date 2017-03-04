@@ -36,7 +36,6 @@
             this.setState({ todos: todos })
           })
           .catch((err) => {
-            console.log(err)
             this.setState({ error: `Could not connect to API: ${this.props.source}` })
           })
       }
@@ -100,6 +99,8 @@
           )
         }.bind(this))
 
+        var error = this.state.error ? <p className="error">{this.state.error}</p> : null
+
         return (
           <div>
             <div className="notification">
@@ -109,12 +110,12 @@
                 <p className="small">Each branch gets its own database. Check it out and then head back to Runnable.</p>
               </div>
             </div>
+            {error}
             <h1 className="h1">Todo List</h1>
             <ul className="todo-list">
               {renderedTodos}
               <AddTodoField saveCallback={this.addTodo} />
             </ul>
-            <p className="error">{this.state.error}</p>
           </div>
         )
       }
