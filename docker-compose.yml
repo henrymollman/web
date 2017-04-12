@@ -11,7 +11,7 @@ services:
     links:
       - "db"
     environment:
-      - MONGODB_HOST: db
+      - MONGODB_HOST=db
   web:
     build: .
     ports:
@@ -19,4 +19,4 @@ services:
     links:
       - "api"
     environment:
-      - API_HOST: api
+      - API_HOST=api
