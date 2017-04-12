@@ -5,7 +5,7 @@ services:
     ports:
       - "27017:27017"
   api:
-    build: git@github.com/RunnableDemoForYash/api.git
+    build: git@github.com/DockerCon2017/api.git
     ports:
       - "3000:3000"
     links:
